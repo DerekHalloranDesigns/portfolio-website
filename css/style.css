@@ -1,21 +1,20 @@
 /*
 Colors used:
-Primary Color (Dark Blue): #080e2e;
-Secondary Color (Gray): #dedfe0;
+Primary Color (Dark Blue): #ffffff;
+Secondary Color (Gray): #635e5e;
 */
 
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #635e5e;
 }
   
 h1, h2, h3, h4 {
   line-height: 1.4;
-
 }
 
 h1 {
@@ -31,9 +30,64 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 400;
-  }
+}
 
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #635e5e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #cc6540;
+  text-decoration: underline;
+}
+
+/* not including visited and selected state for now */
+
+.button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #635e5e;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: 1px solid #635e5e;
+  border-top: 1px solid #635e5e;
+  border-left: 1px solid #635e5e;
+  border-right: 1px solid #635e5e;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  color: #49b0e8;
+  border-bottom: 1px solid #49b0e8;
+  border-top: 1px solid #49b0e8;
+  border-left: 1px solid #49b0e8;
+  border-right: 1px solid #49b0e8;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: #ffffff;
+  color: #635e5e;
+  text-transform: uppercase;
+  border: 1px solid #635e5e;
+}
+
+.button.contact:hover {
+  color: #49b0e8;
+  border-bottom: 1px solid #49b0e8;
+  border-top: 1px solid #49b0e8;
+  border-left: 1px solid #49b0e8;
+  border-right: 1px solid #49b0e8;
+  text-decoration: none;
 }
