@@ -16,12 +16,12 @@
 
 <body>
   <header>
-     <div>
+     <div class="container">
        <a href="index.html">
-        <img src="img/dh-logo.png" alt="Derek Halloran Designs">
+        <img src="img/dh-logo.png" alt="Derek Halloran Designs" class="logo">
        </a>
      <nav>
-      <ul>
+      <ul class ="navigation">
         <li><a href="#">Work</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#">Contact</a></li>
@@ -32,7 +32,7 @@
 
  <main>
   <div id="hero">
-    <div>
+    <div class="container">
       <h1>
         Hello, my name is Derek!<br>
         <span>
@@ -47,14 +47,14 @@
     </div>
   </div>
 
-  <div id="projects">
-    <div>
-     <picture>
-        <source srcset="img/pluto pay/desktop/behance-thumbnail.png" media="(max-width:767px)">
-         <img src="img/pluto pay/desktop/behance-thumbnail.png" alt="Pluto Pay">
+  <div id="work">
+   <div class="container">
+    <h2>My Work</h2>
+    <div class="row">
+      <picture>
+         <source srcset="img/pluto pay/desktop/behance-thumbnail.png" media="(max-width:767px)">
+         <img src="img/pluto pay/desktop/behance-thumbnail.png" alt="Pluto Pay" class="thumbnail">
       </picture>
-    </div>
-     <div>
       <h3>Pluto Pay</h3>
       <p>
         Managing money can be a hassle without the proper tools. PlutoPay empowers online consumers by 
@@ -83,19 +83,17 @@
         <li>Adobe CC</li>
        </ul>
       <a href="pluto-pay.html" class="button">Read more</a>
-    </div>
-
-    <div>
-     <picture>
-        <source srcset="img/lego masters campaign/desktop/lego-thumbnail.png" media="(max-width:767px)">
-        <img src="img/lego masters campaign/desktop/lego-thumbnail.png" alt="LEGO Masters Campaign">
-      </picture>
-    </div>
-    <div>
-     <h3>LEGO Masters Campaign</h3>
-     <p>
-       Rekindling the relationship between teenagers and LEGO by inspiring them to “Rebuild the World.”
-     </p>
+    </div>  
+    
+    <div class="row">
+      <picture>
+         <source srcset="img/lego masters campaign/desktop/lego-thumbnail.png" media="(max-width:767px)">
+         <img src="img/lego masters campaign/desktop/lego-thumbnail.png" alt="LEGO Masters Campaign" class="thumbnail">
+       </picture>
+      <h3>LEGO Masters Campaign</h3>
+      <p>
+        Rekindling the relationship between teenagers and LEGO by inspiring them to “Rebuild the World.”
+      </p>
       <p>
        Skills:
       </p>
@@ -116,11 +114,14 @@
        </ul> 
       <a href="" class="button">Read more</a>
     </div>
-  </div>
+   </div>
+  </div>    
   </main>
 
   <footer>
-    <div class="contact">
+   <div class="container">
+    <div id="contact">
+     <div>
       <h2>Get in Touch</h2>
       <p>
        Do you like my work and want to discuss opportunities? Please get in touch. Call: 518-506-6706 
@@ -154,6 +155,8 @@
      </div>
        <p>©Derek Halloran 2021</p>
      </div>
+    </div>  
+   </div> 
   </footer>
 </body>
 
