@@ -214,3 +214,9 @@ a:hover {
 .thumbnail {
   max-width: 800px;
 }
+
+.social-media svg {
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
