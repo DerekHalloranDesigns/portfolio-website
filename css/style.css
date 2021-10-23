@@ -49,6 +49,11 @@ nav > ul > li > a {
   display: inline-block;
   width: 100%;
   color: #e2e2e2;
+  text-align: center;
+}
+
+#hero span {
+  display: block;
 }
 
 main {
@@ -58,7 +63,7 @@ main {
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 300;
   line-height: 1.6;
   color: #635e5e;
@@ -91,6 +96,10 @@ h4 {
   font-weight: 400;
 }
 
+.container > h2 {
+  text-align: center;
+}
+
 img {
   width: 100%;
 }
@@ -107,41 +116,32 @@ a:hover {
 
 .button {
   display: inline-block;
-  background-color: #ffffff;
-  color: #635e5e;
+  background-color: #635e5e;
+  color: white;
   font-weight: 400;
   padding: 10px;
   border-radius: 5px;
-  border-bottom: 1px solid #635e5e;
-  border-top: 1px solid #635e5e;
-  border-left: 1px solid #635e5e;
-  border-right: 1px solid #635e5e;
+  border-bottom: 2px solid #2c2c2c;
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  color: #49b0e8;
-  border-bottom: 1px solid #49b0e8;
-  border-top: 1px solid #49b0e8;
-  border-left: 1px solid #49b0e8;
-  border-right: 1px solid #49b0e8;
   text-decoration: none;
+  opacity: 0.8;
+  color: white;
 }
 
 .button.contact {
-  background-color: #ffffff;
-  color: #635e5e;
+  background-color: #635e5e;
+  color: white;
   text-transform: uppercase;
-  border: 1px solid #635e5e;
+  border-bottom: 2px solid #2c2c2c;
 }
 
 .button.contact:hover {
-  color: #49b0e8;
-  border-bottom: 1px solid #49b0e8;
-  border-top: 1px solid #49b0e8;
-  border-left: 1px solid #49b0e8;
-  border-right: 1px solid #49b0e8;
   text-decoration: none;
+  opacity: 0.8;
+  color: white;
 }
 
 .container {
@@ -222,4 +222,143 @@ a:hover {
   height: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#about-page h3 {
+  margin-top: 0;
+}
+
+/* ==============================
+EXAMPLE SVG !!!
+================================= */
+
+#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {
+      fill: #edc655;
+  }
+  50% {
+      fill: #fcffad;
+  }
+  100% {
+      fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+      transform: translate(0, 50px);
+  }
+  to {
+      transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+      transform: translate(446px, 48px);
+  }
+  to {
+      transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+      text-align: unset;
+      padding: 20px 0 13px;
+  }
+
+  nav {
+      width: auto;
+      float: right;
+      margin-top: 25px;
+  }
+
+  main {
+      padding-top: 125px;
+  }
+
+  .col-md-6 {
+      width: 50%;
+  }
+
+  [class*="col-"] {
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+
+  footer {
+      float: left;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+      width: 58.33%;
+  }
+
+  .col-lg-5 {
+      width: 41.66%;
+  }
+
+  [class*="col-"] {
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+
+  .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
 }
