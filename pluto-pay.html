@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="https://kit.fontawesome.com/4549bc0711.js" crossorigin="anonymous"></script>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="author" content="Derek Halloran">
 	<meta name="description" content="Derek Halloran Designs UX Portfolio Website">
@@ -16,6 +17,7 @@
 <body>
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
        <img src="img/dh-logo.png" alt="Derek Halloran Designs" class="logo">
       </a>
@@ -23,9 +25,11 @@
      <ul class ="navigation">
        <li><a href="#">Work</a></li>
        <li><a href="about.html">About</a></li>
-       <li><a href="#">Contact</a></li>
+       <li><a href="#" onclick="menuToggle()">Contact</a></li>
+       <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
      </ul>
     </nav>
+  </div>
    </div>
  </header>
 
@@ -736,7 +740,8 @@
      </div>  
     </div> 
    </footer>
-  <script src="js/scripts.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <script src="js/scripts.js"></script>
 </body>
 
 </html>

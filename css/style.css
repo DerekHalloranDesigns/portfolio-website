@@ -6,8 +6,7 @@ Secondary Color (Gray): #635e5e;
 
 header {
   background-color: #161b2f;
-  text-align: center;
-  padding: 5px 0;
+  padding: 10px 0 4px;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
   position: fixed;
   display: inline-block;
@@ -18,18 +17,10 @@ header {
   display: inline-block;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -40,7 +31,7 @@ nav > ul > li > a {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 #hero {
@@ -57,7 +48,7 @@ nav > ul > li > a {
 }
 
 main {
-  padding-top: 160px;
+  padding-top: 65px;
 }
 
 body {
@@ -228,6 +219,39 @@ a:hover {
   margin-top: 0;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #635e5e;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
 /* ==============================
 EXAMPLE SVG !!!
 ================================= */
@@ -320,6 +344,26 @@ Medium devices (640px and larger)
 
   footer {
       float: left;
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
   }
 }
 
