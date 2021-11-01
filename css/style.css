@@ -137,6 +137,9 @@ a:hover {
 
 .container {
   padding: 0 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #work .row {
@@ -211,8 +214,6 @@ a:hover {
 
 .social-media svg {
   height: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #about-page h3 {
@@ -342,10 +343,6 @@ Medium devices (640px and larger)
       display: table;
   }
 
-  footer {
-      float: left;
-  }
-
   .logo {
     max-width: 250px;
   }
@@ -386,12 +383,6 @@ Large devices (1024px or larger)
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-  }
-
-  .container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
   }
 }
 
