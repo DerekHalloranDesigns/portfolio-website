@@ -13,6 +13,12 @@ header {
   width: 100%;
 }
 
+footer {
+  background-color: #161b2f;
+  padding: 20px;
+  color: #e2e2e2;
+}
+
 .top-bar {
   display: inline-block;
 }
@@ -33,6 +39,13 @@ nav > ul > li > a {
 .logo {
   max-width: 150px;
 }
+
+#hero .intro {
+  max-width: 725px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  }
 
 #hero {
   background-color: #161b2f;
@@ -143,9 +156,14 @@ a:hover {
 }
 
 #work .row {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #4a4a4a;
+}
+
+#work .row-bottom {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #hero h1 {
@@ -164,42 +182,12 @@ a:hover {
   max-width: 1000px;
 }
 
-#user-flow {
-  max-width: 1000px;
-}
-
 #site-map {
   max-width: 1400px;
 }
 
 .lowfi-wireframe {
   max-width: 100%;
-}
-
-.hifi-wireframe > picture {
-  border: 1px solid #818385;
-  max-width: 300px;
-  margin: 5px;
-  display: inline-block;
-  line-height: 0;
-}
-
-.mockup > picture {
-  max-width: 300px;
-  margin: 5px;
-  display: inline-block;
-}
-
-.usability-affinity-maps {
-  max-width: 800px;
-}
-
-.revisions > picture {
-  border: 1px solid #818385;
-  max-width: 300px;
-  margin: 5px;
-  display: inline-block;
-  line-height: 0;
 }
 
 .survey-data > svg {
@@ -307,6 +295,17 @@ EXAMPLE SVG !!!
 }
 
 /* ==============================
+Small devices (1px and larger)
+================================= */
+@media only screen and (min-width: 1px) {
+  
+#user-flow {
+  max-width: 100%;
+  }
+
+}
+
+/* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
@@ -344,6 +343,12 @@ Medium devices (640px and larger)
       display: table;
   }
 
+  .row-bottom::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
   .logo {
     max-width: 250px;
   }
@@ -363,6 +368,36 @@ Medium devices (640px and larger)
   nav > ul {
     margin: 1em 0;
   }
+}
+
+.hifi-wireframe > picture {
+  border: 1px solid #818385;
+  max-width: 45%;
+  margin: 5px;
+  display: inline-block;
+  line-height: 0;
+}
+
+.mockup > picture {
+  max-width: 45%;
+  margin: 5px;
+  display: inline-block;
+}
+
+.usability-affinity-maps {
+  max-width: 800px;
+}
+
+.revisions > picture {
+  border: 1px solid #818385;
+  max-width: 45%;
+  margin: 5px;
+  display: inline-block;
+  line-height: 0;
+}
+
+#user-flow {
+  width: 550px;
 }
 
 /* ==============================
@@ -385,6 +420,28 @@ Large devices (1024px or larger)
       -moz-box-sizing: border-box;
       box-sizing: border-box;
   }
+}
+
+.hifi-wireframe > picture {
+  border: 1px solid #818385;
+  max-width: 250px;
+  margin: 5px;
+  display: inline-block;
+  line-height: 0;
+}
+
+.mockup > picture {
+  max-width: 250px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.revisions > picture {
+  border: 1px solid #818385;
+  max-width: 250px;
+  margin: 5px;
+  display: inline-block;
+  line-height: 0;
 }
 
 /* ==============================
