@@ -104,6 +104,10 @@ h4 {
   text-align: center;
 }
 
+.my-story > h2 {
+text-align: left;
+}
+
 img {
   width: 100%;
 }
@@ -156,13 +160,13 @@ a:hover {
 }
 
 #work .row {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
   border-bottom: 1px solid #4a4a4a;
 }
 
 #work .row-bottom {
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 
@@ -311,7 +315,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
       text-align: unset;
-      padding: 20px 0 13px;
+      padding: 0px 0 5px;
   }
 
   nav {
@@ -321,7 +325,7 @@ Medium devices (640px and larger)
   }
 
   main {
-      padding-top: 125px;
+      padding-top: 100px;
   }
 
   .col-md-6 {
