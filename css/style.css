@@ -246,56 +246,37 @@ a:hover {
   display: block;
 }
 
-/* ==============================
-EXAMPLE SVG !!!
-================================= */
-
-#about-picture {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+.vocab-process {
+  max-width: 800px;
 }
 
-@keyframes color-change {
-  0% {
-      fill: #edc655;
-  }
-  50% {
-      fill: #fcffad;
-  }
-  100% {
-      fill: #f76414;
-  }
+.vocab-quotes {
+  max-width: 800px;
 }
 
-.sun {
-  animation: 4s color-change infinite alternate linear;
+.vocab-persona01 {
+  max-width: 800px;
+  margin-top: 40px;
 }
 
-@keyframes cloud-move {
-  from {
-      transform: translate(0, 50px);
-  }
-  to {
-      transform: translate(200px, 50px);
-  }
+.vocab-persona02 {
+  max-width: 800px;
+  margin-top: 40px;
 }
 
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+.iterative-banner {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@keyframes cloud-move-reverse {
-  from {
-      transform: translate(446px, 48px);
-  }
-  to {
-      transform: translate(100px, 48px);
-  }
+h3 {
+  margin-bottom: -10px;
 }
 
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+h2 {
+  margin-bottom: -5px;
+  margin-top: 50px;
 }
 
 /* ==============================
@@ -305,8 +286,20 @@ Small devices (1px and larger)
   
 #user-flow {
   max-width: 100%;
+  margin-top: 20px;
   }
 
+  .vocab-lowfi-left {
+    max-width: 100%;
+  }
+  
+  .vocab-lowfi-right {
+    max-width: 100%;
+  }
+  
+  .vocab-clear-header {
+    clear: both;
+}
 }
 
 /* ==============================
@@ -372,7 +365,6 @@ Medium devices (640px and larger)
   nav > ul {
     margin: 1em 0;
   }
-}
 
 .hifi-wireframe > picture {
   border: 1px solid #818385;
@@ -380,12 +372,14 @@ Medium devices (640px and larger)
   margin: 5px;
   display: inline-block;
   line-height: 0;
+  margin-top: 20px;
 }
 
 .mockup > picture {
   max-width: 45%;
   margin: 5px;
   display: inline-block;
+  margin-top: 20px;
 }
 
 .usability-affinity-maps {
@@ -402,6 +396,44 @@ Medium devices (640px and larger)
 
 #user-flow {
   width: 550px;
+  margin-top: 20px;
+}
+
+.vocab-flow {
+  max-width: 600px;
+}
+
+.marvel-link {
+  color: #49b0e8;
+}
+
+.marvel-link > a:hover {
+  color: #49b0e8;
+  text-decoration: underline;
+}
+
+.vocab-hifi-wireframe {
+  max-width: 800px;
+}
+
+.vocab-test-report {
+  max-width: 1000px;
+}
+
+.vocab-lowfi-left {
+  max-width: 50%;
+  float: left;
+}
+
+.vocab-lowfi-right {
+  max-width: 50%;
+  float: right;
+}
+
+.vocab-clear-header {
+  clear: both;
+
+}
 }
 
 /* ==============================
@@ -424,7 +456,6 @@ Large devices (1024px or larger)
       -moz-box-sizing: border-box;
       box-sizing: border-box;
   }
-}
 
 .hifi-wireframe > picture {
   border: 1px solid #818385;
@@ -432,12 +463,14 @@ Large devices (1024px or larger)
   margin: 5px;
   display: inline-block;
   line-height: 0;
+  margin-top: 20px;
 }
 
 .mockup > picture {
   max-width: 250px;
   margin: 5px;
   display: inline-block;
+  margin-top: 20px;
 }
 
 .revisions > picture {
@@ -446,6 +479,7 @@ Large devices (1024px or larger)
   margin: 5px;
   display: inline-block;
   line-height: 0;
+}
 }
 
 /* ==============================
