@@ -23,6 +23,24 @@ footer {
   color: #e2e2e2;
 }
 
+.behance {
+  max-width: 30px;
+  float: right;
+  padding: 0 15px;
+}
+
+.linkedin {
+  max-width: 19px;
+  float: right;
+  padding: 0 15px;
+}
+
+.email {
+  max-width: 25px;
+  float: right;
+  padding: 0 15px;
+}
+
 .top-bar {
   display: inline-block;
 }
