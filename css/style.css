@@ -4,6 +4,10 @@ Primary Color (Dark Blue): #ffffff;
 Secondary Color (Gray): #635e5e;
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-color: #161b2f;
   padding: 10px 0 4px;
