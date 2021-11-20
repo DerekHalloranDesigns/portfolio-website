@@ -394,6 +394,10 @@ Medium devices (640px and larger)
   max-width: 800px;
 }
 
+.interview-affinity-map {
+  margin-top: 15px;
+}
+
 .revisions > picture {
   max-width: 45%;
   margin: 5px;
