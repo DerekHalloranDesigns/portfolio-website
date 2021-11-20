@@ -49,7 +49,7 @@ nav > ul > li > a {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  }
+}
 
 #hero {
   background-color: #161b2f;
@@ -109,7 +109,7 @@ h4 {
 }
 
 .my-story > h2 {
-text-align: left;
+  text-align: left;
 }
 
 img {
@@ -225,7 +225,8 @@ a:hover {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -240,17 +241,17 @@ a:hover {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid #635e5e;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -291,23 +292,22 @@ h2 {
 Small devices (1px and larger)
 ================================= */
 @media only screen and (min-width: 1px) {
-  
-#user-flow {
-  max-width: 100%;
-  margin-top: 20px;
+  #user-flow {
+      max-width: 100%;
+      margin-top: 20px;
   }
 
   .vocab-lowfi-left {
-    max-width: 100%;
+      max-width: 100%;
   }
-  
+
   .vocab-lowfi-right {
-    max-width: 100%;
+      max-width: 100%;
   }
-  
+
   .vocab-clear-header {
-    clear: both;
-}
+      clear: both;
+  }
 }
 
 /* ==============================
@@ -349,102 +349,101 @@ Medium devices (640px and larger)
   }
 
   .row-bottom::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+      content: "";
+      clear: both;
+      display: table;
+  }
 
   .logo {
-    max-width: 250px;
+      max-width: 250px;
   }
 
   nav > ul > li {
-    display: inline-block;
+      display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
-    display: inline-block;
+      display: inline-block;
   }
 
   .navtoggle li:last-child {
-    display: none;
+      display: none;
   }
 
   nav > ul {
-    margin: 1em 0;
+      margin: 1em 0;
   }
 
-.hifi-wireframe > picture {
-  border: 1px solid #818385;
-  max-width: 45%;
-  margin: 5px;
-  display: inline-block;
-  line-height: 0;
-  margin-top: 20px;
-}
+  .hifi-wireframe > picture {
+      border: 1px solid #818385;
+      max-width: 45%;
+      margin: 5px;
+      display: inline-block;
+      line-height: 0;
+      margin-top: 20px;
+  }
 
-.mockup > picture {
-  max-width: 45%;
-  margin: 5px;
-  display: inline-block;
-  margin-top: 20px;
-}
+  .mockup > picture {
+      max-width: 45%;
+      margin: 5px;
+      display: inline-block;
+      margin-top: 20px;
+  }
 
-.usability-affinity-maps {
-  max-width: 800px;
-}
+  .usability-affinity-maps {
+      max-width: 800px;
+  }
 
-.interview-affinity-map {
-  margin-top: 15px;
-}
+  .interview-affinity-map {
+      margin-top: 15px;
+  }
 
-.revisions > picture {
-  max-width: 45%;
-  margin: 5px;
-  display: inline-block;
-  line-height: 0;
-}
+  .revisions > picture {
+      max-width: 45%;
+      margin: 5px;
+      display: inline-block;
+      line-height: 0;
+  }
 
-#user-flow {
-  width: 550px;
-  margin-top: 20px;
-}
+  #user-flow {
+      width: 550px;
+      margin-top: 20px;
+  }
 
-.vocab-flow {
-  max-width: 600px;
-}
+  .vocab-flow {
+      max-width: 600px;
+  }
 
-.marvel-link {
-  color: #379fd7;
-}
+  .marvel-link {
+      color: #379fd7;
+  }
 
-.marvel-link > a:hover {
-  color: #379fd7;
-  text-decoration: underline;
-}
+  .marvel-link > a:hover {
+      color: #379fd7;
+      text-decoration: underline;
+  }
 
-.vocab-hifi-wireframe {
-  max-width: 800px;
-}
+  .vocab-hifi-wireframe {
+      max-width: 800px;
+  }
 
-.vocab-test-report {
-  max-width: 1000px;
-}
+  .vocab-test-report {
+      max-width: 1000px;
+  }
 
-.vocab-lowfi-left {
-  max-width: 50%;
-  float: left;
-}
+  .vocab-lowfi-left {
+      max-width: 50%;
+      float: left;
+  }
 
-.vocab-lowfi-right {
-  max-width: 50%;
-  float: right;
-}
+  .vocab-lowfi-right {
+      max-width: 50%;
+      float: right;
+  }
 
-.vocab-clear-header {
-  clear: both;
-
-}
+  .vocab-clear-header {
+      clear: both;
+  }
 }
 
 /* ==============================
@@ -468,28 +467,28 @@ Large devices (1024px or larger)
       box-sizing: border-box;
   }
 
-.hifi-wireframe > picture {
-  border: 1px solid #818385;
-  max-width: 250px;
-  margin: 5px;
-  display: inline-block;
-  line-height: 0;
-  margin-top: 20px;
-}
+  .hifi-wireframe > picture {
+      border: 1px solid #818385;
+      max-width: 250px;
+      margin: 5px;
+      display: inline-block;
+      line-height: 0;
+      margin-top: 20px;
+  }
 
-.mockup > picture {
-  max-width: 250px;
-  margin: 5px;
-  display: inline-block;
-  margin-top: 20px;
-}
+  .mockup > picture {
+      max-width: 250px;
+      margin: 5px;
+      display: inline-block;
+      margin-top: 20px;
+  }
 
-.revisions > picture {
-  max-width: 250px;
-  margin: 5px;
-  display: inline-block;
-  line-height: 0;
-}
+  .revisions > picture {
+      max-width: 250px;
+      margin: 5px;
+      display: inline-block;
+      line-height: 0;
+  }
 }
 
 /* ==============================
