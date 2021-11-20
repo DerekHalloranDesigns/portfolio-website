@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (Dark Blue): #ffffff;
+Primary Color (Dark Blue): #161b2f;
 Secondary Color (Gray): #635e5e;
 */
 
@@ -122,8 +122,12 @@ a {
 }
 
 a:hover {
-  color: #49b0e8;
+  color: #379fd7;
   text-decoration: underline;
+}
+
+.toc > a {
+  color: #379fd7;
 }
 
 .button {
@@ -391,7 +395,6 @@ Medium devices (640px and larger)
 }
 
 .revisions > picture {
-  border: 1px solid #818385;
   max-width: 45%;
   margin: 5px;
   display: inline-block;
@@ -408,11 +411,11 @@ Medium devices (640px and larger)
 }
 
 .marvel-link {
-  color: #49b0e8;
+  color: #379fd7;
 }
 
 .marvel-link > a:hover {
-  color: #49b0e8;
+  color: #379fd7;
   text-decoration: underline;
 }
 
@@ -478,7 +481,6 @@ Large devices (1024px or larger)
 }
 
 .revisions > picture {
-  border: 1px solid #818385;
   max-width: 250px;
   margin: 5px;
   display: inline-block;
