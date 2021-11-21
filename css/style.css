@@ -15,34 +15,72 @@ header {
   position: fixed;
   display: inline-block;
   width: 100%;
+  box-sizing: border-box;
 }
 
 footer {
   background-color: #161b2f;
   padding: 20px;
   color: #e2e2e2;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.behance:hover,
+.linkedin:hover,
+.email:hover {
+  fill: #237DAE;
 }
 
 .behance {
   max-width: 30px;
   float: right;
   padding: 0 15px;
+  fill: #e2e2e2;
 }
 
 .linkedin {
   max-width: 19px;
   float: right;
   padding: 0 15px;
+  fill: #e2e2e2;
 }
 
 .email {
   max-width: 25px;
   float: right;
   padding: 0 15px;
+  fill: #e2e2e2;
 }
 
-.top-bar {
-  display: inline-block;
+.project-summary > ul {
+  list-style-type: none;
+  margin-top: -20px;
+}
+
+.project-summary > ul li:before {
+  content: '-';
+  margin-right: 10px;
+  margin-left: -20px;
+}
+
+.project-summary > h3 {
+  font-weight: bold;
+}
+
+.about-list > ul {
+  list-style-type: none;
+}
+
+.about-list > ul li:before {
+  content: '-';
+  margin-right: 10px;
+  margin-left: -20px;
+}
+
+h4{
+  margin-top: -2px;
 }
 
 nav > ul {
@@ -71,6 +109,7 @@ nav > ul > li > a {
   width: 100%;
   color: #e2e2e2;
   text-align: center;
+  box-sizing: border-box;
 }
 
 #hero span {
@@ -335,6 +374,12 @@ header{
   padding-top: 5px;
 }
 
+#home-header {
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -473,6 +518,10 @@ Medium devices (640px and larger)
 
   .vocab-clear-header {
       clear: both;
+  }
+
+  .project-summary {
+    margin-top: -35px;
   }
 }
 
