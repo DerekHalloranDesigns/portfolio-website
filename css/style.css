@@ -120,10 +120,6 @@ nav > ul > li > a {
   text-align: center;
 }
 
-#contact-header > h1 {
-  margin-top: 10px;
-}
-
 #contact-header .intro {
   text-align: center;
   margin-top: -20px;
@@ -582,6 +578,10 @@ header{
   max-width: 175px;
   margin-top: 0px;
 }
+
+#contact-header > h1 {
+  margin-top: 30px;
+}
 }
 
 /* ==============================
@@ -727,6 +727,10 @@ Medium devices (640px and larger)
   .logo {
     max-width: 175px;
     margin-top: 5px;
+  }
+
+  #contact-header > h1 {
+    margin-top: 10px;
   }
 }
 
