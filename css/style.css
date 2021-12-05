@@ -16,6 +16,7 @@ header {
   display: inline-block;
   width: 100%;
   box-sizing: border-box;
+  z-index: 99999;
 }
 
 footer {
@@ -318,6 +319,7 @@ a:hover {
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
+  width: 100%;
 }
 .navtoggle.responsive li {
   display: block;
