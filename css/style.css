@@ -528,6 +528,13 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   pointer-events: none;
 }
 
+#banner {
+  max-width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ==============================
 Small devices (1px and larger)
 ================================= */
