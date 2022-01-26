@@ -337,6 +337,16 @@ a:hover {
   max-width: 800px;
 }
 
+.portfolio-process {
+  max-width: 800px;
+  margin-top: 30px;
+}
+
+#font-display,
+#portfolio-test-report {
+  max-width: 700px;
+}
+
 .vocab-quotes {
   max-width: 800px;
 }
@@ -360,6 +370,25 @@ a:hover {
 #home-header > h2 {
   margin-bottom: -5px;
   margin-top: 40px;
+}
+
+.portfolio-swatches > picture {
+  max-width: 400px;
+  display: inline-block;
+}
+
+.collapsed-expanded > picture {
+  max-width: 400px;
+  display: inline-block;
+}
+
+#expanded {
+  padding-left: 30px;
+}
+
+.underlined {
+  margin-bottom: -20px;
+  text-decoration: underline;
 }
 
 /* ==============================
@@ -696,11 +725,14 @@ Medium devices (640px and larger)
       max-width: 600px;
   }
 
-  .marvel-link {
+  .marvel-link,
+  .cf-link,
+  .pp-link {
       color: #237DAE;
   }
 
-  .marvel-link > a:hover {
+  .marvel-link > a:hover,
+  .cf-link > a:hover {
       color: #237DAE;
       text-decoration: underline;
   }

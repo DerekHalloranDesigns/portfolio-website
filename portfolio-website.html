@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+
+<head>
+  <script src="https://kit.fontawesome.com/4549bc0711.js" crossorigin="anonymous"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="author" content="Derek Halloran">
+	<meta name="description" content="Derek Halloran Designs UX Portfolio Website">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="apple-touch-icon" href="favicon.ico"/>
+  <title>Derek Halloran Designs</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+      <a href="index.html">
+       <img src="img/dh-logo.png" alt="Derek Halloran Designs" class="logo">
+      </a>
+    <nav>
+     <ul class ="navigation">
+       <li><a href="index.html">Work</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="files/derek-halloran-resume.pdf" target="_blank">Resume</a></li>
+       <li><a href="contact.html" onclick="menuToggle()">Contact</a></li>
+       <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+     </ul>
+    </nav>
+  </div>
+   </div>
+ </header>
+
+  <main>
+   <div id="work">
+   <div class="container">
+     <div class="row-bottom">
+      <picture>
+         <source srcset="img/portfolio-website/desktop/website-banner.png" media="(max-width:767px)">
+         <img src="img/portfolio-website/desktop/website-banner.png" alt="Vocabulary App" id="banner">
+      </picture>
+        <h2>Project Overview</h2>
+        <h3>The Challenge</h3>
+        <p>
+          Build a responsive portfolio website to showcase my UX portfolio using my knowledge of HTML, CSS, and Javascript.
+        </p>
+        <h3>The Goal</h3>
+        <p>
+          Showcase my portfolio projects in a way that communicates my design process across multiple platforms, and make my contact information and resume readily available to 
+          potential employers.
+        </p>
+        <h3>Project Duration</h3>
+        <p>
+          2 Months
+        </p>
+        <h3>Tools Used</h3>
+        <ul>
+          <li>VSCode</li>
+          <li>GitHub</li>
+          <li>Adobe Illustrator</li>
+          <li>Adobe Photoshop</li>
+        </ul>
+        <div class="portfolio-process">
+        <picture>
+          <source srcset="img/portfolio-website/desktop/process.png" media="(max-width:767px)">
+          <img src="img/portfolio-website/desktop/process.png" alt="My Process">
+        </picture>
+        </div>
+       <h3>Information Architecture</h3>
+       <p>
+        The best way divide the content of the website up was into four categories: home page, about page, project pages, and finally a contact page. Once I determined what each page would consist of, I began mapping out where the content would live based on the wireframes provided by 
+        <a href="https://images.careerfoundry.com/public/courses/frontend/New%20Update/Project%20Brief%20Wireframes/Frontend%20Project%20Brief%20New.pdf" target="_blank" class="cf-link">CareerFoundry.</a>
+        Before diving into the coding phase of the process, 
+        I created a style guide for the color scheme and fonts based on my branding.
+       </p>
+       <h3>Color Scheme</h3>
+       <p>
+        The color scheme I selected represents the same values my branding holds: clean, simple, and professional, while maintaining AA accessibility standards.
+       </p>
+       <div class="portfolio-swatches">
+       <picture>
+        <source srcset="img/portfolio-website/desktop/swatches-1.png" media="(max-width:767px)">
+        <img src="img/portfolio-website/desktop/swatches-1.png" alt="My Process" id="swatches-1">
+      </picture>
+      <picture>
+        <source srcset="img/portfolio-website/desktop/swatches-2.png" media="(max-width:767px)">
+        <img src="img/portfolio-website/desktop/swatches-2.png" alt="My Process" id="swatches-2">
+      </picture>
+      </div>
+       <h3>Font Choice</h3>
+       <p>
+        Like the color scheme, I chose Roboto: a font that would best represent my branding and remain easy to read regardless of the size.
+       </p>
+       <picture>
+        <source srcset="img/portfolio-website/desktop/font-display.png" media="(max-width:767px)">
+        <img src="img/portfolio-website/desktop/font-display.png" alt="My Process" id="font-display">
+      </picture>
+       <h3>Development Phase</h3>
+       <p>
+        After establishing a basis for the styling of my website, I dove right into HTML where I plugged all content into the site. Once all the content was completed, I began creating 
+        developing layouts for each media query starting with mobile first, then desktop and tablet. One challenge was creating a navigation menu that would function at both mobile and desktop screen sizes. To do this, I utilized my knowledge of Javascript to create a 
+        hamburger menu for mobile screen sizes.
+       </p>
+       <div class="collapsed-expanded">
+       <picture>
+        <source srcset="img/portfolio-website/desktop/collapsed.png" media="(max-width:767px)">
+        <img src="img/portfolio-website/desktop/collapsed.png" alt="My Process" id="collapsed">
+      </picture>
+      <picture>
+        <source srcset="img/portfolio-website/desktop/expanded.png" media="(max-width:767px)">
+        <img src="img/portfolio-website/desktop/expanded.png" alt="My Process" id="expanded">
+      </picture>
+      </div>
+      <h3>Usability Testing</h3>
+      <p>
+        Once the website was ready to be tested, I recruited 5 participants who best fit my target audience. 
+        Each participant performed four tasks based on what an employer would likely do or look for when 
+        visiting the website:
+      </p>
+      <p class="underlined">Scenario #1:</p>
+      <p>
+        You have just landed on the home page for the first time.  Explain your first impression 
+        and any visual elements you noticed. (SEQ not applicable).
+      </p>
+      <p class="underlined">Scenario #2:</p>
+      <p>
+        You scroll through the projects and PlutoPay catches your eye. Where can you find 
+        additional information about this project? What was the project about?
+      </p>
+      <p class="underlined">Scenario #3:</p>
+      <p>
+        After viewing all of the projects you become interested to learn about this person's 
+        education and previous experience. As a result, you want to look at their resume. 
+        Where can you find it?
+      </p>
+      <p class="underlined">Scenario #4:</p>
+      <p>
+        You have now read through their resume and are impressed with their skills and background. 
+        You'd like to reach out to them to talk about the job opening. How do you proceed?
+      </p>
+      <h3>Usability Test Results</h3>
+      <p>
+        After performing each task, the participant was asked to rate the difficulty of the task using an SEQ scale. Most tasks took the user under one minute each, 
+        and overall the tests were a success. The SEQ averages ranged from 6.67 to 7 out of 7, which is a very high score.<br><br>
+
+        Potential adjustments were rated on a scale from 0-4 to determine the importance of making said change, 0 being the least crucial changes and 4 being the most crucial.
+      </p>
+      <picture>
+        <source srcset="img/portfolio-website/desktop/test-report.png" media="(max-width:767px)">
+        <img src="img/portfolio-website/desktop/test-report.png" alt="My Process" id="portfolio-test-report">
+      </picture>
+      <h3>Revisions</h3>
+      <p>
+        Notable changes made to the website include adding an interactive table of contents to the 
+        <a href="http://derekhallorandesigns.com/pluto-pay" target="_blank" class="pp-link">PlutoPay project page.</a> 
+        This betters the user experience greatly, 
+        as the project page is extensive. Having an interactive table of contents allows for easier navigation on the page. Minor changes were made to improve the
+        appeal such as fixing the padding issues in various project pages.
+      </p>
+      <h3>Next Steps & Reflection</h3>
+      <p>
+        My portfolio website represents who I am as a UI/UX Designer: always improving. I plan to continue pushing my website further by focusing on visual appeal
+        and formatting the content to be easier to digest for users. Other projects will be added as well, similar to this one. As I learn new UI/UX skills, deepen 
+        my knowledge of code, and grow as a designer I will come back to this website to ensure it accurately depicts who I am through iterative design.
+      </p>
+
+   </div>
+   </div>
+   </div> 
+  </main>
+
+  <footer>
+    <div class="container">
+        <a href="mailto:derekhallorandesigns@gmail.com" target="blank">
+            <svg class ="email" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.43 55.62"><g id="Layer_1" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M42.12,40.72a6,6,0,0,1-6.81,0L0,16.77V51.16a4.46,4.46,0,0,0,4.46,4.46H73a4.46,4.46,0,0,0,4.46-4.46V16.77Z"/><path class="cls-1" d="M35.31,34.72a6,6,0,0,0,6.81,0L77.43,10.77V4.46A4.46,4.46,0,0,0,73,0H4.46A4.46,4.46,0,0,0,0,4.46v6.31Z"/></g></g></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/derekhallorandesigns/" target="blank">
+            <svg class="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.71 55.62"><g id="Layer_3" data-name="Layer 2"><g id="Layer_1-3" data-name="Layer 1"><path class="cls-1" d="M41.87,17.54a12.18,12.18,0,0,0-10.93,6h-.15V18.47H19.71V55.61H31.25V37.24c0-4.85.92-9.54,6.92-9.54s6,5.54,6,9.85V55.62H55.71V35.24C55.71,25.23,53.56,17.54,41.87,17.54Z"/><path class="cls-1" d="M6.69,0a6.7,6.7,0,0,0,0,13.39h0a6.72,6.72,0,0,0,6.69-6.7h0A6.72,6.72,0,0,0,6.69,0Z"/><rect class="cls-1" x="0.92" y="18.47" width="11.55" height="37.15"/></g></g></svg>
+        </a>
+        <a href="https://www.behance.net/halldere984be5" target="blank">
+            <svg class="behance" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.82 55.62"><g id="Layer_4" data-name="Layer 2"><g id="Layer_1-4" data-name="Layer 1"><path class="cls-1" d="M71.8,13.9c-20.9,0-20.9,20.8-20.9,20.9S49.5,55.6,71.8,55.6c0,0,16.8,1,18.5-12.3a2,2,0,0,0-1.9-2.2H82.6a2,2,0,0,0-1.9,1.4c-.5,1.7-2.3,4.5-8.5,4.5,0,0-8.1.5-9.4-7.2a1.87,1.87,0,0,1,1.9-2.2H88.9a1.9,1.9,0,0,0,1.9-1.9C91,30.1,90,13.9,71.8,13.9Zm-8,16.3a1.14,1.14,0,0,1-1.1-1.5c.8-2.4,3.1-6.9,9.2-6.9,6.3,0,7.8,4.7,8.2,7.1A1.11,1.11,0,0,1,79,30.2Zm-25-4.8a.8.8,0,0,1-.1-1.5c2.3-1.2,5.1-3.8,5.1-9.4C43.8,4.8,37,0,28.4,0H1.4A1.37,1.37,0,0,0,0,1.4V53a1.37,1.37,0,0,0,1.4,1.4H28.3s17.3.5,17.3-16.1C45.6,38.4,46.2,27.8,38.8,25.4ZM12.4,10.7a1,1,0,0,1,1-1H28.2s3.8,0,3.8,5.7-2.3,6.5-4.8,6.5H13.5a1,1,0,0,1-1-1V10.7ZM27.5,44.8h-14a1,1,0,0,1-1-1V31.3a1,1,0,0,1,1-1H28.3s5.8-.1,5.7,7.5C34,44.1,29.7,44.7,27.5,44.8ZM60,2.2V6.9a1,1,0,0,0,1,1H81.4a1,1,0,0,0,1-1V2.2a1,1,0,0,0-1-1H61.1A1,1,0,0,0,60,2.2Z"/></g></g></svg>
+        </a>
+    <p class="copyright">©Derek Halloran 2021</p>
+    </div>
+</footer>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <script src="js/scripts.js"></script>
+</body>
+
+</html>
