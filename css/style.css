@@ -564,14 +564,15 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   margin-right: auto;
 }
 
+.user-flow {
+  width: 100%;
+  margin-top: 40px;
+}
+
 /* ==============================
 Small devices (1px and larger)
 ================================= */
 @media only screen and (min-width: 1px) {
-  .user-flow {
-      max-width: 100%;
-      margin-top: 20px;
-  }
 
   .vocab-lowfi-left {
       max-width: 100%;
@@ -714,11 +715,6 @@ Medium devices (640px and larger)
       margin: 5px;
       display: inline-block;
       line-height: 0;
-  }
-
-  .user-flow {
-      width: 550px;
-      margin-top: 20px;
   }
 
   .vocab-flow {
