@@ -19,22 +19,24 @@
 <body>
   <header>
     <div class="container">
-      <div class="navtoggle" id="myNavtoggle">
-      <a href="index.html">
-       <img src="img/dh-logo.png" alt="Derek Halloran Designs" class="logo">
-      </a>
-    <nav>
-     <ul class ="navigation">
-       <li><a href="index.html">Work</a></li>
-       <li><a href="about.html">About</a></li>
-       <li><a href="files/derek-halloran-resume.pdf" target="_blank">Resume</a></li>
-       <li><a href="contact.html" onclick="menuToggle()">Contact</a></li>
-       <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-     </ul>
-    </nav>
-  </div>
-   </div>
- </header>
+        <div class="navtoggle" id="myNavtoggle">
+            <a href="index.html">
+                <img src="img/dh-logo.png" alt="Derek Halloran Designs" class="logo" />
+            </a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#about-target" onclick="menuClose()">About</a></li>
+                    <li><a href="#hero-target" onclick="menuClose()">Work</a></li>
+                    <li><a href="#contact-target" onclick="menuClose()">Contact</a></li>
+                    <li><a href="files/derek-halloran-resume.pdf" target="_blank" onclick="menuClose()">Resume</a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
 
   <main>
    <div id="work">

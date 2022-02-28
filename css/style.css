@@ -254,6 +254,8 @@ a:hover {
   border-radius: 5px;
   border-bottom: 2px solid #2c2c2c;
   transition: 0.2s opacity;
+  z-index: 0;
+  position: relative;
 }
 
 .button:hover {
@@ -576,9 +578,11 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   margin-right: auto;
 }
 
+/* COMING SOON BUTTON
 #tbd {
   pointer-events: none;
 }
+*/
 
 #banner {
   max-width: 800px;
