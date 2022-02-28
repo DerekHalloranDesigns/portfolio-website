@@ -11,6 +11,18 @@ html {
 header {
   background-color: #161b2f;
   padding: 10px 0 4px;
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 99999;
+}
+
+/* Header back up code
+
+header {
+  background-color: #161b2f;
+  padding: 10px 0 4px;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
   position: fixed;
   display: inline-block;
@@ -18,6 +30,8 @@ header {
   box-sizing: border-box;
   z-index: 99999;
 }
+
+*/
 
 footer {
   background-color: #161b2f;
@@ -70,16 +84,6 @@ footer {
   font-weight: bold;
 }
 
-.about-list > ul {
-  list-style-type: none;
-}
-
-.about-list > ul li:before {
-  content: '-';
-  margin-right: 10px;
-  margin-left: -20px;
-}
-
 h4{
   margin-top: -2px;
 }
@@ -97,34 +101,59 @@ nav > ul > li > a {
   color: #e2e2e2;
 }
 
-#hero .intro {
-  max-width: 730px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #hero {
+  background-image: url(../img/home/desktop/hero-bg.png);
   background-color: #161b2f;
   display: inline-block;
   width: 100%;
-  color: #e2e2e2;
-  text-align: center;
+  height: 800px;
+  color: #ffffff;
+  text-align: left;
   box-sizing: border-box;
+}
+
+#hello {
+  font-size: 5em;
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 #hero span {
   display: block;
+  max-width: 600px;
 }
 
-#contact-header {
-  text-align: center;
+#hero-target {
+  margin-top: -85px;
 }
 
-#contact-header .intro {
-  text-align: center;
-  margin-top: -20px;
+#about-target {
+  margin-top: -120px;
+}
+
+#contact-target {
+  margin-top: -120px;
+}
+
+.button-alt {
+  display: inline-block;
+  border: 2px solid #4678de;
+  border-radius: 2px;
+  color: white;
   font-weight: 400;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: 0.2s opacity;
+}
+
+.button-alt:hover {
+  text-decoration: none;
+  background-color: #26437c;
+  opacity: 0.8;
+  color: white;
 }
 
 main {
@@ -171,10 +200,6 @@ h4 {
   text-align: center;
 }
 
-.my-story > h2 {
-  text-align: left;
-}
-
 img {
   width: 100%;
 }
@@ -210,6 +235,14 @@ a:hover {
 
 .custom-divider {
   height: calc(87px);
+}
+
+.custom-divider-about {
+  height: 150px;
+}
+
+.custom-divider-contact {
+  height: 100px;
 }
 
 .button {
@@ -250,22 +283,14 @@ a:hover {
 }
 
 #work .row {
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 50px;
   border-bottom: 1px solid #4a4a4a;
 }
 
 #work .row-bottom {
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
-
-#hero h1 {
-  text-align: center;
-}
-
-.photo {
-  max-width: 600px;
+  padding-top: 50px;
+  margin-bottom: 50px;
 }
 
 .survey-data > picture {
@@ -291,10 +316,6 @@ a:hover {
 
 .thumbnail {
   max-width: 800px;
-}
-
-#about-page h3 {
-  margin-top: 0;
 }
 
 .navtoggle li:not(:last-child) {
@@ -368,8 +389,8 @@ a:hover {
 }
 
 #home-header > h2 {
-  margin-bottom: -5px;
-  margin-top: 40px;
+  margin-bottom: -20px;
+  margin-top: 50px;
 }
 
 .portfolio-swatches > picture {
@@ -395,8 +416,12 @@ a:hover {
 CONTACT FORM
 ================================= */
 
+.get-in-touch {
+  float: right;
+}
+
 #fcf-form {
-  display:block;
+  display: block;
 }
 
 .fcf-body {
@@ -411,10 +436,8 @@ CONTACT FORM
   padding-bottom: 10px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
+  max-width: 600px;
+  margin-top: 60px;
   margin-bottom: 25px;
 }
 
@@ -574,6 +597,12 @@ Small devices (1px and larger)
 ================================= */
 @media only screen and (min-width: 1px) {
 
+  .gray-background {
+    width: 100%;
+    background-color: #dfdfdf;
+    height: 1000px;
+  }
+
   .vocab-lowfi-left {
       max-width: 100%;
   }
@@ -612,12 +641,22 @@ header{
   margin-top: 0px;
 }
 
-#contact-header > h1 {
-  margin-top: 30px;
-}
-
 h3 {
   margin-bottom: 10px;
+}
+
+.photo {
+  margin: auto;
+  margin-top: -100px;
+  max-width: 500px;
+  z-index: 0 !important;
+  background: transparent;
+}
+
+.my-story {
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-bottom: 110px;
 }
 }
 
@@ -625,9 +664,31 @@ h3 {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+ 
   #hero {
     margin-top: -35px;
     padding: 10px;
+  }
+
+  .photo {
+    margin: auto;
+    margin-top: -100px;
+    max-width: 500px;
+    z-index: 0 !important;
+    position: relative;
+    background: transparent;
+  }
+
+  .my-story {
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 110px;
+  }
+
+  .gray-background {
+    width: 100%;
+    background-color: #dfdfdf;
+    height: 850px;
   }
  
   header {
@@ -664,7 +725,17 @@ Medium devices (640px and larger)
       display: table;
   }
 
+  /* Last Project Script:
+
   .row-bottom::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+*/
+
+  .about::after {
       content: "";
       clear: both;
       display: table;
@@ -764,10 +835,6 @@ Medium devices (640px and larger)
     margin-top: 5px;
   }
 
-  #contact-header > h1 {
-    margin-top: 10px;
-  }
-
   h3 {
     margin-bottom: -10px;
   }
@@ -783,6 +850,26 @@ Large devices (1024px or larger)
 
   .col-lg-5 {
       width: 41.66%;
+  }
+
+  .photo {
+    margin: auto;
+    margin-top: -100px;
+    width: 500px;
+    z-index: 0 !important;
+    background: transparent;
+  }
+
+  .my-story {
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 110px;
+  }
+
+  .gray-background {
+    width: 100%;
+    background-color: #dfdfdf;
+    height: 430px;
   }
 
   [class*="col-"] {

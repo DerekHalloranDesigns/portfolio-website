@@ -25,10 +25,10 @@
                     </a>
                     <nav>
                         <ul class="navigation">
-                            <li><a href="index.html">Work</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="files/derek-halloran-resume.pdf" target="_blank">Resume</a></li>
-                            <li><a href="contact.html" onclick="menuToggle()">Contact</a></li>
+                            <li><a href="#about-target" onclick="menuClose()">About</a></li>
+                            <li><a href="#hero-target" onclick="menuClose()">Work</a></li>
+                            <li><a href="#contact-target" onclick="menuClose()">Contact</a></li>
+                            <li><a href="files/derek-halloran-resume.pdf" target="_blank" onclick="menuClose()">Resume</a></li>
                             <li>
                                 <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
                             </li>
@@ -41,23 +41,49 @@
         <main>
             <div id="hero">
                 <div class="container">
-                    <h1>
-                        Hello, my name is Derek!
-                        <span>
-                            I'm a UX Designer from New York!
-                        </span>
-                    </h1>
+                    <h2 id="hello">
+                        Hello!<br> I'm Derek.
+                    </h2>
                     <div class="intro">
-                        <p>
-                            I'm a UX Designer with a background in Graphic Design. I have a strong foundation in visual design, and a passion for coding. My diverse skill set plays a key role in creating rewarding experiences for users.
-                        </p>
+                       <span>
+                        <h4>
+                            I'm a UX Designer with a background in Graphic Design. I have a strong foundation in visual design, and a passion for coding.
+                        </h4>
+                    </span>
                     </div>
+                    <a href="#hero-target" class="button-alt">My Work</a>
                 </div>
             </div>
+
+            <div class="gray-background">
+            <div class="container">
+              <div class="about">
+                <div class="column col-md-5 col-lg-5">
+                <div id="about-target" class="custom-divider-about"></div>
+                <picture>
+                    <source srcset="img/home/desktop/derek.png" media="(max-width:767px)" />
+                    <img src="img/home/desktop/derek.png" alt="Derek Halloran" class="photo"/>
+                </picture>
+                </div>
+                  <div class="column col-md-7 col-lg-7">
+                  <div class="my-story">
+                    <h2>My Story</h2>
+                    <p>
+                        Hello! I'm Derek, and I'm a UX designer with a background in graphic design. I have a strong foundation in visual design, and a passion for coding. My diverse skillset plays a key role in creating rewarding
+                        experiences for users. After working in customer service for five years, I have developed a unique sense of empathy for my clients. My drive for user-centered design stems from the years I have catering to
+                        their every need. Incorporating my experience in graphic design and customer service, I create rewarding experiences and solutions for users.
+                    </p>
+                    <a href="files/derek-halloran-resume.pdf" download class="button">Download my Resume</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
             <div id="work">
                 <div class="container">
                 <div id="home-header">
+                    <div id="hero-target" class="custom-divider"></div>
                     <h2>My Work</h2>
                 </div>
                     <div class="row">
@@ -139,7 +165,7 @@
                         </div>
                     </div>
 
-                    <div class="row-bottom">
+                    <div class="row">
                         <div class="column col-md-6 col-lg-7">
                             <picture>
                                 <source srcset="img/portfolio-website/desktop/home-thumbnail.png" media="(max-width:767px)"/>
@@ -177,6 +203,52 @@
                     </div>
                 </div>
             </div>
+
+            <div class="container">
+            <div class="contact-section">
+                <div id="get-in-touch" class="column col-md-6 col-lg-5">
+                    <h1>Let's get in touch!</h1>
+                        <p>
+                        I am currently looking for remote opportunities as a Junior UI/UX Designer. If you would like to get to know
+                        me better, fill out the contact form below so we can talk!
+                        </p>
+                    </div>
+            <div class="column col-md-6 col-lg-7">
+                <div id="contact-target" class="custom-divider-contact"></div>
+            <div class="fcf-body">
+                <div id="fcf-form">
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="https://formspree.io/f/mqknzqvr">
+                    
+                    <div class="fcf-form-group">
+                        <label for="Name" class="fcf-label">Your name</label>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label">Your email address</label>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label">Your message</label>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
         </main>
 
         <footer>
