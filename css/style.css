@@ -1,7 +1,7 @@
 /*
 Colors used:
 Primary Color (Dark Blue): #161b2f;
-Secondary Color (Gray): #635e5e;
+Secondary Color (Gray): #3f3f3f;
 */
 
 html {
@@ -80,12 +80,8 @@ footer {
   margin-left: -20px;
 }
 
-.project-summary > h3 {
+.project-summary > h4 {
   font-weight: bold;
-}
-
-h4{
-  margin-top: -2px;
 }
 
 nav > ul {
@@ -113,7 +109,7 @@ nav > ul > li > a {
 }
 
 #hello {
-  font-size: 5em;
+  font-size: 4.5em;
   text-align: left;
   margin-top: 100px;
   margin-bottom: 20px;
@@ -147,6 +143,7 @@ nav > ul > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
   transition: 0.2s opacity;
+  margin-top: 35px;
 }
 
 .button-alt:hover {
@@ -154,6 +151,10 @@ nav > ul > li > a {
   background-color: #26437c;
   opacity: 0.8;
   color: white;
+}
+
+.hero-bottom {
+  margin-top: -10px;
 }
 
 main {
@@ -166,7 +167,7 @@ body {
   font-size: 1em;
   font-weight: 400;
   line-height: 1.6;
-  color: #635e5e;
+  color: #3f3f3f;
 }
 
 h1,
@@ -183,16 +184,20 @@ h1 {
 
 h2 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 h4 {
   font-size: 1.35em;
+  font-weight: 450;
+}
+
+#hero-about {
   font-weight: 400;
 }
 
@@ -200,12 +205,16 @@ h4 {
   text-align: center;
 }
 
+.project-summary > h3 {
+  font-weight: bold;
+}
+
 img {
   width: 100%;
 }
 
 a {
-  color: #635e5e;
+  color: #3f3f3f;
   text-decoration: none;
 }
 
@@ -247,7 +256,7 @@ a:hover {
 
 .button {
   display: inline-block;
-  background-color: #635e5e;
+  background-color: #3f3f3f;
   color: white;
   font-weight: 400;
   padding: 10px;
@@ -265,7 +274,7 @@ a:hover {
 }
 
 .button.contact {
-  background-color: #635e5e;
+  background-color: #3f3f3f;
   color: white;
   text-transform: uppercase;
   border-bottom: 2px solid #2c2c2c;
@@ -345,7 +354,7 @@ a:hover {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid #635e5e;
+  border-top: 1px solid #3f3f3f;
 }
 
 .navtoggle.responsive li:last-child {
@@ -430,7 +439,7 @@ CONTACT FORM
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #635e5e;
+  color: #3f3f3f;
   text-align: left;
   background-color: #fff;
   padding-left: 30px;
@@ -467,7 +476,7 @@ CONTACT FORM
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #635e5e;
+  color: #3f3f3f;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -477,7 +486,7 @@ CONTACT FORM
 }
 
 .fcf-form-control:focus {
-  border: 1px solid #635e5e;
+  border: 1px solid #3f3f3f;
 }
 
 select.fcf-form-control[size], select.fcf-form-control[multiple] {
@@ -532,7 +541,7 @@ label.fcf-label {
 
 .fcf-btn-primary {
 display: inline-block;
-background-color: #635e5e;
+background-color: #3f3f3f;
 color: white;
 font-weight: 400;
 padding: 10px;
@@ -596,6 +605,11 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
   margin-top: 40px;
 }
 
+.gray-background-border {
+  height: 1px;
+  background-color: #e2e2e2;
+}
+
 /* ==============================
 Small devices (1px and larger)
 ================================= */
@@ -603,7 +617,7 @@ Small devices (1px and larger)
 
   .gray-background {
     width: 100%;
-    background-color: #dfdfdf;
+    background-color: #f4f4f4;
     height: 1000px;
   }
 
@@ -645,7 +659,7 @@ header{
   margin-top: 0px;
 }
 
-h3 {
+h4 {
   margin-bottom: 10px;
 }
 
@@ -691,7 +705,7 @@ Medium devices (640px and larger)
 
   .gray-background {
     width: 100%;
-    background-color: #dfdfdf;
+    background-color: #f4f4f4;
     height: 850px;
   }
  
@@ -839,7 +853,7 @@ Medium devices (640px and larger)
     margin-top: 5px;
   }
 
-  h3 {
+  h4 {
     margin-bottom: -10px;
   }
 }
@@ -872,7 +886,7 @@ Large devices (1024px or larger)
 
   .gray-background {
     width: 100%;
-    background-color: #dfdfdf;
+    background-color: #f4f4f4;
     height: 430px;
   }
 
